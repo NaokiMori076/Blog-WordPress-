@@ -1,0 +1,85 @@
+<style>
+    .m-container {
+        width: 100%;
+        height: auto;
+
+        .m-header {
+            width: 100%;
+            min-height: 130px;
+
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu {
+                color: black;
+                margin-left: 9.7vw;
+
+                .ul {
+                    display: flex;
+                    text-decoration: none;
+                    list-style-type: none;
+
+                    .li {
+                        font-size: 25px;
+                        font-family: 'Heebo';
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+            .m-logo {
+                margin-right: 9.7vw;
+                color: black;
+                font-size: 4.6vw;
+                font-family: 'Rubik';
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .m-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .menu {
+                    margin-left: 0px;
+
+                    .ul {
+                        .li {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+                .m-logo {
+                    margin-right: 0px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .banner-one {
+            height: 927px;
+            width: 100%;
+        }
+
+    }
+</style>
+<div class="m-container">
+    <div class="m-header">
+        <div class="menu">
+            <ul class="ul">
+                <li class="li">צור קשר</li>
+                <li class="li">תקצירים</li>
+                <li class="li">אודות</li>
+            </ul>
+        </div>
+        <div class="m-logo">עפרוני ושות</div>
+    </div>
+    <div class="banner-one">
+        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/banner-img1.png' ) ); ?>" alt="" />
+        dddd
+    </div>
+</div>
